@@ -5,9 +5,9 @@ import { StyleSheet, Text, View } from 'react-native';
 const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text>Welcome Back!</Text>
+      <Text style={styles.header}>Welcome Back!</Text>
       <FormikForm
-        initialValue="Yorgo"
+        initialValue=""
         onSubmit={() => navigation.replace('Other')}
       />
     </View>
@@ -16,9 +16,13 @@ const LoginScreen: React.FC<{ navigation: any }> = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    padding: 15,
     flexDirection: 'column',
     backgroundColor: '#DB5375',
     alignItems: 'center',
+  },
+  header: {
+    fontSize: 20,
   },
 });
 

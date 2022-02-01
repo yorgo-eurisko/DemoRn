@@ -2,7 +2,7 @@ import { StyleSheet, SafeAreaView, StatusBar, View } from 'react-native';
 import React from 'react';
 import DisableButton from '../components/disableButton/DisableButton';
 
-const OtherPage: React.FC<any> = () => {
+const OtherPage: React.FC<object> = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle={'dark-content'} />
