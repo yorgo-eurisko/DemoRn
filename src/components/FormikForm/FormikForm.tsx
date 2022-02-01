@@ -41,7 +41,6 @@ const FormikForm: React.FC<props> = ({ initialValue, onSubmit }) => {
         {({ handleChange, handleBlur, handleSubmit, values, errors }) => (
           <View style={styles.inner}>
             <Text style={styles.header}>Login</Text>
-            {console.log(values)}
             <TextInput
               placeholder="username"
               value={values.username}
